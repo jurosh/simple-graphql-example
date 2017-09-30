@@ -3,8 +3,7 @@ const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
 const person = require('./personData');
 
-const PORT = 80;
-const PORT_SSL = 443;
+const PORT = process.env.PORT || 80;
 
 // Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
@@ -37,10 +36,6 @@ app.use(
   })
 );
 
-// SSL for heroku
-app.listen(PORT_SSL);
-
-// 80 for local (but don't do this in real app)
 app.listen(PORT);
 
 console.log(`Running a GraphQL API server at localhost:${PORT}/graphql`);
