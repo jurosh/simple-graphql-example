@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-Open `https://localhost/graphql`
+Open `http://localhost/graphql`
 
 ## Queries
 
