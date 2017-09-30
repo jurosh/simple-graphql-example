@@ -23,6 +23,6 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true,
 }));
 
-app.listen(80);
+app.listen(443);
 
-console.log('Running a GraphQL API server at localhost:80/graphql');
+console.log('Running a GraphQL API server at localhost:443/graphql');
