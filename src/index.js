@@ -14,15 +14,15 @@ const schema = buildSchema(`
   }
   type Query {
     hello: String
+    people: [Person]
     person (id: Int!): Person
   }
 `);
 
 // The root provides a resolver function for each API endpoint
 const root = {
-  hello: () => {
-    return 'Hello world!';
-  },
+  hello: () => 'Hello world!',
+  people: () => Object.values(person),
   person: ({ id }) => person[id]
 };
 

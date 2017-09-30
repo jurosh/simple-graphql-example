@@ -27,3 +27,12 @@ Open `https://localhost/graphql`
   }
 }
 ```
+
+```
+{
+  people {
+    name
+    age
+  }
+}
+```
