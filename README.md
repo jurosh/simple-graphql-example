@@ -10,3 +10,20 @@ npm start
 ```
 
 Open `https://localhost/graphql`
+
+## Queries
+
+```
+{
+  hello
+}
+```
+
+```
+{
+  person(id: 2) {
+    id
+    name
+  }
+}
+```
