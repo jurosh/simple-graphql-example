@@ -1,7 +1,7 @@
-const express = require("express");
-const graphqlHTTP = require("express-graphql");
-const { buildSchema } = require("graphql");
-const person = require("./personData");
+const express = require('express');
+const graphqlHTTP = require('express-graphql');
+const { buildSchema } = require('graphql');
+const person = require('./personData');
 
 const PORT = 80;
 const PORT_SSL = 443;
@@ -22,14 +22,14 @@ const schema = buildSchema(`
 // The root provides a resolver function for each API endpoint
 const root = {
   hello: () => {
-    return "Hello world!";
+    return 'Hello world!';
   },
   person: ({ id }) => person[id]
 };
 
 const app = express();
 app.use(
-  "/graphql",
+  '/graphql',
   graphqlHTTP({
     schema: schema,
     rootValue: root,
