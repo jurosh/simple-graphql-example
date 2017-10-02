@@ -36,3 +36,12 @@ Open `http://localhost/graphql`
   }
 }
 ```
+
+```
+mutation {
+  createPerson(name: "Juraj", age: 35) {
+    id
+    name
+  }
+}
+```
