@@ -8,14 +8,14 @@ const PORT = process.env.PORT || 80;
 // Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
   type Person {
-    id: Int!
+    id: ID!
     name: String!
     age: Int
   }
   type Query {
     hello: String
     people: [Person]
-    person (id: Int!): Person
+    person (id: ID!): Person
   }
 `);
 
