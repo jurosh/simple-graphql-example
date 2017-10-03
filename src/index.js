@@ -1,10 +1,9 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
-const person = require('./personData');
-const uuid = require('uuid/v4');
+const { createPerson, getPeople, getPerson } = require('./data/people');
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 81;
 
 // Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
@@ -27,18 +26,10 @@ const schema = buildSchema(`
 const root = {
   // Queries
   hello: () => 'Hello world!',
-  people: () => Object.values(person),
-  person: ({ id }) => person[id],
+  people: () => getPeople(),
+  person: ({ id }) => getPerson(id),
   // Mutations
-  createPerson: ({ name, age }) => {
-    const newPerson = {
-      id: uuid(),
-      name,
-      age
-    };
-    person[newPerson.id] = newPerson;
-    return newPerson;
-  }
+  createPerson: ({ name, age }) => createPerson(name, age)
 };
 
 const app = express();
