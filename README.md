@@ -1,6 +1,10 @@
 # Simple GraphQL server
 
-Using express.js
+GraphQL server using express.js
+
+*Please not that this is only basic implementation. There are more advanced implementations out there - will place links here later :)*
+
+If you want simply generate backend based on Models only, you can use great [GraphCool service](https://www.graph.cool/).
 
 ## Setup & Run
 
@@ -13,11 +17,15 @@ Open `http://localhost/graphql`
 
 ## Queries
 
+Say Hello:
+
 ```
 {
   hello
 }
 ```
+
+Get person by id:
 
 ```
 {
@@ -27,6 +35,8 @@ Open `http://localhost/graphql`
   }
 }
 ```
+
+Get all people:
 
 ```
 {
