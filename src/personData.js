@@ -9,4 +9,4 @@ module.exports = {
     name: 'Peto',
     age: 15
   }
-}
+};

@@ -1,6 +1,6 @@
 {
   "name": "graphql-express-jurosh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple GraphQL server",
   "main": "src/index.js",
   "scripts": {
@@ -13,8 +13,8 @@
   "author": "Juraj Husar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.1",
+    "express": "^4.16.2",
     "express-graphql": "^0.6.11",
-    "graphql": "^0.11.6"
+    "graphql": "^0.11.7"
   }
 }
