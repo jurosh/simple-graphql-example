@@ -2,10 +2,13 @@
 
 GraphQL server using express.js
 
-*Please not that this is only basic implementation. There are more advanced implementations out there - will place links here later :)*
+*Please not that this is only basic implementation.*
 
 If you want simply generate backend based on Models only, you can use great [GraphCool service](https://www.graph.cool/).
 There is interesting [code generator](https://github.com/dotansimha/graphql-code-generator) project.
+
+Another interesting project from Graphcool is [**Prisma**](https://github.com/graphcool/prisma).
+Prisma can easily generate ready to run GraphQL backend and can be hosted myself or in Prisma cloud.
 
 To learn more about GraphQL visit [GraphQL official website](http://graphql.org/learn/).
 
@@ -58,3 +61,10 @@ mutation {
   }
 }
 ```
+
+# Interesting links
+
+GraphQL visualizers:
+
+- GraphqlViz https://github.com/sheerun/graphqlviz
+- Voyager https://apis.guru/graphql-voyager/ (https://github.com/APIs-guru/graphql-voyager)
