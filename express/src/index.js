@@ -34,6 +34,9 @@ const root = {
   createPerson: ({ name, age }) => createPerson(name, age)
 };
 
+// Print out whole schema
+// console.log(JSON.stringify(schema));
+
 const app = express();
 app.use(
   '/graphql',

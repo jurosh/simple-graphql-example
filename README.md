@@ -1,8 +1,8 @@
-# Simple GraphQL server
+# Simple GraphQL server implementations
 
 GraphQL server using express.js
 
-*Please not that this is only basic implementation.*
+_Please not that this is only basic implementation._
 
 If you want simply generate backend based on Models only, you can use great [GraphCool service](https://www.graph.cool/).
 There is interesting [code generator](https://github.com/dotansimha/graphql-code-generator) project.
@@ -12,59 +12,17 @@ Prisma can easily generate ready to run GraphQL backend and can be hosted myself
 
 To learn more about GraphQL visit [GraphQL official website](http://graphql.org/learn/).
 
-## Setup & Run
+## Code Examples
 
-```
-npm install
-npm start
-```
+1. Express basic (raw) implementation in folder `./express`.
 
-Open `http://localhost/graphql`
+![Schema](express/schema.png)
 
-## Queries
+2. Prisma advanced example in `./prisma` _(under development)_.
 
-Say Hello:
-
-```
-{
-  hello
-}
-```
-
-Get person by id:
-
-```
-{
-  person(id: 2) {
-    id
-    name
-  }
-}
-```
-
-Get people:
-
-```
-{
-  people {
-    name
-    age
-  }
-}
-```
-
-```
-mutation {
-  createPerson(name: "Juraj", age: 35) {
-    id
-    name
-  }
-}
-```
-
-# Interesting links
+## Interesting links
 
 GraphQL visualizers:
 
-- GraphqlViz https://github.com/sheerun/graphqlviz
-- Voyager https://apis.guru/graphql-voyager/ (https://github.com/APIs-guru/graphql-voyager)
+* Voyager https://apis.guru/graphql-voyager/ (https://github.com/APIs-guru/graphql-voyager)
+* GraphqlViz https://github.com/sheerun/graphqlviz
