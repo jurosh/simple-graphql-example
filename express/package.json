@@ -19,7 +19,5 @@
     "graphql": "^0.13.1",
     "uuid": "^3.2.1"
   },
-  "devDependencies": {
-    "prettier": "^1.10.2"
-  }
+  "devDependencies": {}
 }

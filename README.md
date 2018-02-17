@@ -1,8 +1,8 @@
 # Simple GraphQL server implementations
 
-GraphQL server using express.js
+GraphQL server using express.js & Prisma.
 
-_Please not that this is only basic implementation._
+_Please not that this repo contains only basic implementations, GraphQL can be much more powerfull._
 
 If you want simply generate backend based on Models only, you can use great [GraphCool service](https://www.graph.cool/).
 There is interesting [code generator](https://github.com/dotansimha/graphql-code-generator) project.
