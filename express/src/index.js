@@ -25,7 +25,7 @@ const schema = buildSchema(`
 `);
 
 // The root provides a resolver function for each API endpoint
-const root = {
+const rootValue = {
   // Queries
   hello: () => 'Hello world!',
   people: () => getPeople(),
@@ -35,15 +35,7 @@ const root = {
 };
 
 const app = express();
-app.use(
-  '/graphql',
-  graphqlHTTP({
-    schema: schema,
-    rootValue: root,
-    graphiql: true
-  })
-);
-
+app.use('/graphql', graphqlHTTP({ schema, rootValue, graphiql: true }));
 app.listen(PORT);
 
 console.log(`Running a GraphQL API server at localhost:${PORT}/graphql`);

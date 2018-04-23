@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "pretty": "prettier --single-quote --write \"src/**/*.js\""
   },
   "engines": {
@@ -14,9 +13,9 @@
   "author": "Juraj Husar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2",
-    "express-graphql": "^0.6.11",
-    "graphql": "^0.13.1",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
     "uuid": "^3.2.1"
   },
   "devDependencies": {}
