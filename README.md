@@ -1,5 +1,9 @@
 # Simple GraphQL server implementations
 
+*WARNING: This example might be slightly out of date, please check official docs for used libraries*
+
+
+
 GraphQL server using **Express** & **Apollo** & **Prisma**.
 
 _Please not that this repo contains only basic implementations, GraphQL can be much more powerfull._
